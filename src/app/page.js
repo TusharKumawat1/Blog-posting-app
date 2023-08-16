@@ -14,7 +14,7 @@ export default function page() {
   } 
   return (
     <div>
-      <h1>Welcome!</h1>
+     {session.status==="unauthenticated"? <h1>Welcome!</h1>:<h1>Create a post </h1>}
      {session.status==="authenticated"? <button
         className="logutBtn"
         onClick={(e) => {
